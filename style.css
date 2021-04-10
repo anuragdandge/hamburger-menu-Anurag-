@@ -1,0 +1,41 @@
+.main {
+    background-color: blueviolet;
+    height: 20rem;
+    width: 20rem;
+    margin:auto;
+    justify-content: center;
+    display: flex;
+    border-radius: 50px;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    border: solid 2px white;
+    margin-top:50px;
+    border-radius: 5px;
+    justify-content: center;
+    position: absolute;
+}
+.line1 , .line2 , .line3{
+    height: 20px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    position: absolute;
+  
+}
+.line1{
+    margin-top: 40px;
+}
+.line2{
+    margin-top: 90px;
+}
+.line3{
+    margin-top: 140px;
+}
+
+
+
+

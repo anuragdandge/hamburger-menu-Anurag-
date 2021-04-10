@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title> Hamburger Menu </title>
+     <script>
+         $(document).ready(function(){
+             $(".box").mouseover(function(){
+                //  alert("hi");
+                $(".line2").css({
+                    "opacity":"0",
+                    "transition":"opacity 1s"
+                });
+                 $(".line1").css({
+                  "margin-top":"85px",
+                  "transform":"rotate(45deg)",
+                  "transition":"margin 1s ,transform 1s",
+                 
+                 });
+                 $(".line3").css({
+                    "margin-top":"85px",
+                  "transform":"rotate(-45deg)",
+                  "transition":" margin 1s, transform 1s",
+                 });
+                 
+
+             });
+             $(".box").mouseout(function(){
+                $(".line2").css({
+                    "opacity":"1",
+                    "transition":"opacity 1s"
+                });                 $(".line1").css({
+                  "margin-top":"40px",
+                  "transform":"rotate(0deg)",
+                  "transition":"margin 1s ,transform 1s",
+                 });
+                 $(".line3").css({
+                    "margin-top":"140px",
+                  "transform":"rotate(0deg)",
+                  "transition":" margin 1s,transform 1s",
+                 });
+
+             });
+         });
+     </script>
+</head>
+
+<body>
+    <center>
+        <div class="main">
+         
+                <div class="box">
+                    <div id="line" class="line1"></div>
+                    <div id="line" class="line2"></div>
+                    <div id="line" class="line3"></div>
+                </div>
+           
+        </div>
+    </center>
+</body>
+
+</html>
